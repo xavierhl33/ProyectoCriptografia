@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programa 2 - Base64 + AES</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Programa 2 · Base64 ➜ AES ➜ Regresar</h1>
+
+      <div class="row">
+        <label>Texto original</label>
+        <textarea id="plainText" rows="3">
+https://www.saes.upiicsa.ipn.mx/</textarea
+        >
+      </div>
+
+      <div class="row">
+        <label
+          >Clave secreta (frase que usaremos para generar la llave AES)</label
+        >
+        <input id="password" value="MiClaveSuperSecreta123" />
+      </div>
+
+      <div class="btns">
+        <button id="btnEncrypt">Cifrar Doble</button>
+        <button id="btnDecrypt">Descifrar Doble</button>
+        <button id="btnClearAll">Limpiar Todo</button>
+      </div>
+
+      <div class="row">
+        <div class="output-title">1) Base64 intermedio</div>
+        <div id="base64Box" class="output-box"></div>
+      </div>
+
+      <div class="row">
+        <div class="output-title">2) Resultado final cifrado con AES (hex)</div>
+        <div id="aesBox" class="output-box"></div>
+      </div>
+
+      <div class="flex-2col">
+        <div>
+          <div class="small-row">
+            <div class="output-title">IV usado (hex)</div>
+            <div id="ivBox" class="output-box"></div>
+          </div>
+        </div>
+        <div>
+          <div class="small-row">
+            <div class="output-title">Recuperado al final</div>
+            <div id="finalBox" class="output-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        Flujo:<br />
+        original → Base64 → AES-GCM<br />
+        para volver:<br />
+        AES-GCM⁻¹ → Base64⁻¹ → original.
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

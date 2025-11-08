@@ -1,0 +1,84 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  width: 520px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+h1 {
+  font-size: 1.5rem;
+  color: #a78bfa;
+  margin-top: 0;
+  text-align: center;
+}
+label {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+textarea, input {
+  width: 95%;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  resize: none;
+}
+.row { margin-bottom: 1rem; }
+.small-row { margin-bottom: 0.5rem; }
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+button {
+  margin-bottom: 0.8rem;
+  flex: 1;
+  background: #a78bfa;
+  color: #0f172a;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+button:hover { background: #8b5cf6; }
+.output-title {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 0.3rem;
+}
+.output-box {
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.75rem;
+  min-height: 3rem;
+  word-break: break-all;
+  color: #f8fafc;
+}
+.note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.4rem;
+}
+.flex-2col {
+  display: flex;
+  gap: 0.5rem;
+}
+.flex-2col > div { flex: 1; }

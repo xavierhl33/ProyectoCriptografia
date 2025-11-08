@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programa 1 - Base64</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Programa 1 · Base64</h1>
+
+      <div class="row">
+        <label>Texto original</label>
+        <textarea id="inputText" rows="3">
+https://www.saes.upiicsa.ipn.mx/</textarea
+        >
+      </div>
+
+      <div class="btns">
+        <button id="btnEncode">Cifrar (Base64)</button>
+        <button id="btnDecode">Descifrar (Base64)</button>
+        <button id="btnClear">Limpiar</button>
+      </div>
+
+      <div class="row">
+        <div class="output-title">Resultado</div>
+        <div id="resultBox" class="output-box"></div>
+      </div>
+
+      <div class="note">
+        Nota: Base64 es sólo codificación, no cifrado real. Es reversible sin
+        clave.
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

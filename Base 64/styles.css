@@ -1,0 +1,79 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  width: 420px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+h1 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-top: 0;
+  text-align: center;
+}
+label {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+textarea,
+input {
+  width: 98%;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.3rem;
+  font-size: 0.9rem;
+  resize: none;
+}
+.row { margin-bottom: 1.2rem; }
+.btns {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+button {
+  flex: 1;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+button:hover { background: #0ea5e9; }
+.note {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+}
+.output-title {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+.output-box {
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  min-height: 3.2rem;
+  word-break: break-all;
+  color: #f8fafc;
+}
